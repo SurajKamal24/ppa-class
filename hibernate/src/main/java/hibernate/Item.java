@@ -13,7 +13,7 @@ public class Item {
     @GeneratedValue
     private Long id;
     private String name;
-    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Image> images = new ArrayList<>();
 
     public Long getId() {

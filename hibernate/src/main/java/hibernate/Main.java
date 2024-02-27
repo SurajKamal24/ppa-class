@@ -13,16 +13,11 @@ public class Main {
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
 
-        Item item = new Item();
-        item.setName("ABC101");
-        List<Image> imgs = item.getImages();
-        Image img1 = new Image();
-        img1.setItem(item);img1.setUrl("abc/def");
-        imgs.add(img1);
-        Image img2 = new Image();
-        img2.setItem(item);img2.setUrl("lkl/def");
-        imgs.add(img2);
-        em.persist(item);
+        Item item = em.find(Item.class, 1L);
+        long s = System.currentTimeMillis();
+        item.getImages().get(0);
+        long e = System.currentTimeMillis();
+        System.out.println("Time taken: " + (e - s) + "ms");
 
         em.getTransaction().commit();
         em.close();
@@ -30,7 +25,11 @@ public class Main {
 
 }
 
-
+// Spring Data JPA
+// Hibernate
+// JDBC
+// course
+// student
 //Natural primary key: Users (user_id)
 // primary key : composite
 // Messages :
