@@ -14,7 +14,17 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
         //batch("jdbc:postgresql://localhost:5432/postgres", "root", "root", "products");
-        pool();
+        String url = "jdbc:mysql://34.31.197.3/mail_forwarding";
+        String user = "root";
+        String password = "root";
+        Connection conn = DriverManager.getConnection(url, user, password);
+        if (conn != null) {
+            System.out.println("Connected to the database");
+            conn.close();
+        } else {
+            System.out.println("Failed to connect to the database");
+        }
+        //pool();
     }
 
     public static void pool() throws SQLException {
