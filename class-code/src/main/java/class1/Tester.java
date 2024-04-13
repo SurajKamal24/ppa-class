@@ -1,5 +1,8 @@
 package class1;
 
+//topics - class, constructor, instance, object creation, access modifiers, final, static fields, static methods, polymorphism, inheritance
+//interface, super, constructor chaining, parent, child, abstract class, abstract methods
+
 import java.util.List;
 
 public class Tester {
@@ -68,11 +71,23 @@ public class Tester {
         //Animal a = new Dog();
         //a.wagTail();//illegal compilation happens first before running the program. Need to typecasting and then call the methdd
 
+        //Inheritance example
         //Admin a = new Admin();
         //Member a = new Admin();
-        SuperAdmin s = new SuperAdmin();
+        /*SuperAdmin s = new SuperAdmin();
         Admin a = new SuperAdmin();
-        Member m = new SuperAdmin(); //SuperAdmin -> Admin -> Member -> Object => Inheritance hierarchy
+        Member m = new SuperAdmin(); //SuperAdmin -> Admin -> Member -> Object => Inheritance hierarchy*/
+
+        /*Parent p = new Parent();
+        p.func();*/
+        /*Child c = new Child();
+        c.func();*/
+        /*Parent p = new Child();
+        //p.foo(); //illegal - Parent class does not have foo method*/
+
+        /*new TicTacToe();
+        new Game();*/ //Illegal java doesn't allow you create objects of abstract classes
+
     }
 
     //it takes polymorphic type. Allows to write generic code

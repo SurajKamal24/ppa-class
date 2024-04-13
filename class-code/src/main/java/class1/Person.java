@@ -1,6 +1,6 @@
 package class1;
 
-//topics - class, constructor, instance, object creation, access modifiers, final, static fields, static methods, polymorphism
+
 public class Person {
 
     //public variables
