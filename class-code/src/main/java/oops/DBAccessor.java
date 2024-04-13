@@ -1,4 +1,4 @@
-package class1;
+package oops;
 
 public class DBAccessor {
 }

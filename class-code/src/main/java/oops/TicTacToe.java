@@ -1,4 +1,4 @@
-package class1;
+package oops;
 
 //abstract class example
 public class TicTacToe extends Game{

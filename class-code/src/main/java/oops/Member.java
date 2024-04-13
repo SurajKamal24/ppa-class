@@ -1,4 +1,4 @@
-package class1;
+package oops;
 
 //inheritance example
 public class Member {

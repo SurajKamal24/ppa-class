@@ -1,4 +1,4 @@
-package class1;
+package oops;
 
 // composition example
 public class UserDetailsManager {

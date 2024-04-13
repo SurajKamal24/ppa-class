@@ -1,4 +1,4 @@
-package class1;
+package oops;
 
 //Inheritance example
 public class Child extends Parent{

@@ -1,4 +1,4 @@
-package class1;
+package oops;
 
 //topics - class, constructor, instance, object creation, access modifiers, final, static fields, static methods, polymorphism, inheritance
 //interface, super, constructor chaining, parent, child, abstract class, abstract methods
