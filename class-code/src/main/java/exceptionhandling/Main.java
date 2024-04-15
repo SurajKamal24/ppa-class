@@ -147,7 +147,7 @@ public class Main {
         }
     }*/
 
-    //try-with-resources
+    //try-with-resources - Alternative of try-catch-finally
     public static void read() throws Exception {
         try(MyResource myResource = new MyResource()) {
             //some code
