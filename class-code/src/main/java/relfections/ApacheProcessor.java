@@ -1,7 +1,7 @@
 package relfections;
 
 public class ApacheProcessor {
-    public void process() {
+    private void process(int n, String s) {
         System.out.println("ApacheProcessor working");
     }
 }
